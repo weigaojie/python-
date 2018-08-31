@@ -1,0 +1,475 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>redis · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ubuntu.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="redis.html">
+            
+                <a href="redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ubuntu.html">
+            
+                <a href="ubuntu.html">
+            
+                    
+                    ubuntu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="wsgi.html">
+            
+                <a href="wsgi.html">
+            
+                    
+                    wsgi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="vue整合.html">
+            
+                <a href="vue整合.html">
+            
+                    
+                    vue整合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="app打包.html">
+            
+                <a href="app打包.html">
+            
+                    
+                    app打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >redis</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="redis&#x5B89;&#x88C5;">redis&#x5B89;&#x88C5;</h1>
+<pre><code>Remote Dictionary Server&#xFF08;&#x8FDC;&#x7A0B;&#x6570;&#x636E;&#x670D;&#x52A1;&#xFF09;
+</code></pre><ol>
+<li>$sudo apt-get update</li>
+<li>$sudo apt-get install redis-server</li>
+<li>&#x542F;&#x52A8;&#x670D;&#x52A1;&#x5668; Redis
+<code>$ redis-server</code></li>
+<li>&#x542F;&#x52A8;&#x5BA2;&#x6237;&#x7AEF;redis
+<code>$ redis-cli -h -p -a</code></li>
+<li>&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;<pre><code>config set requirepass pass
+</code></pre></li>
+<li>&#x914D;&#x7F6E;&#x6587;&#x4EF6;<pre><code>/etc/redis/redis.conf
+</code></pre><h1 id="redis&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x7528;&#x547D;&#x4EE4;">redis&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x7528;&#x547D;&#x4EE4;</h1>
+</li>
+<li>&#x8BBE;&#x7F6E;&#x503C;<pre><code>set key value [EX s] &#x9ED8;&#x8BA4;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;
+</code></pre></li>
+<li>&#x83B7;&#x53D6;&#x503C;<pre><code>get  key
+</code></pre></li>
+<li>&#x8BBE;&#x7F6E;,&#x83B7;&#x53D6;&#x591A;&#x4E2A;&#x503C;<pre><code>mset key1 value1 key2 value2 ....
+mget key1 key2 ....
+</code></pre></li>
+<li>&#x8FFD;&#x52A0;&#x503C;<pre><code>append  key value
+</code></pre></li>
+<li>&#x5220;&#x9664;&#x503C;<pre><code>del key
+</code></pre></li>
+<li>&#x81EA;&#x589E; &#x589E;&#x51CF;</li>
+</ol>
+<pre><code>incr key
+decr key
+</code></pre><ol>
+<li>&#x52A0;&#x51CF;&#x6307;&#x5B9A;&#x7684;&#x503C;<pre><code>incrby key num
+decrby key num
+</code></pre><h1 id="redis-hash&#x5E38;&#x7528;&#x547D;&#x4EE4;">redis hash&#x5E38;&#x7528;&#x547D;&#x4EE4;</h1>
+</li>
+<li>&#x8BBE;&#x7F6E;hash&#x503C;<pre><code>hset mainkey innerkey val .....
+</code></pre></li>
+<li>&#x83B7;&#x53D6;hash&#x503C;<pre><code>hget mainkey innerkey
+</code></pre></li>
+<li>&#x8BBE;&#x7F6E;&#x591A;&#x4E2A;hash&#x503C;<pre><code>hmset mainkey innerkey1 val1  innerkey2 val2
+</code></pre></li>
+<li>&#x83B7;&#x53D6;&#x591A;&#x4E2A;hash&#x503C;<pre><code>hmget mainkey innerkey1   innerkey2
+</code></pre></li>
+<li>&#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;hash &#x952E;&#x503C;&#x5BF9;</li>
+</ol>
+<pre><code>hgetall mainkey
+</code></pre><ol>
+<li>&#x5220;&#x9664;&#x6307;&#x5B9A;&#x7684;key<pre><code>hdel mainkey innerkey
+</code></pre></li>
+<li>&#x5220;&#x9664;&#x6240;&#x6709;&#x7684;&#x503C;<pre><code>del mainkey
+</code></pre></li>
+<li>&#x81EA;&#x589E;&#x3001;&#x81EA;&#x51CF;&#x503C;<pre><code>hincrby mainkey innerkey num
+hdecrby mainkey innerkey num
+</code></pre></li>
+<li>&#x67E5;&#x770B;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x5B58;&#x5728;<pre><code>hexists mainkey innerkey
+</code></pre></li>
+<li>&#x83B7;&#x53D6;&#x4E2A;&#x6570;<pre><code>hlen mainkey
+</code></pre></li>
+<li>&#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;&#x952E;<pre><code>hkeys mainkey
+</code></pre></li>
+</ol>
+<h1 id="redis-&#x5217;&#x8868;&#x5E38;&#x7528;&#x547D;&#x4EE4;">redis &#x5217;&#x8868;&#x5E38;&#x7528;&#x547D;&#x4EE4;</h1>
+<ol>
+<li>&#x5F00;&#x59CB;(&#x5DE6;&#x4FA7;)&#x6DFB;&#x52A0;&#x6570;&#x636E;
+lpush name val1 val2 val3
+```</li>
+<li>&#x7ED3;&#x5C3E;(&#x53F3;&#x4FA7;)&#x6DFB;&#x52A0;&#x6570;&#x636E;<pre><code>rpush name val1 val2 val3
+</code></pre></li>
+<li>&#x67E5;&#x770B;&#x6570;&#x636E;<pre><code>lrange name start end[&#x652F;&#x6301;&#x8D1F;&#x6570;]
+</code></pre></li>
+<li>&#x4ECE;&#x5DE6;&#x4FA7;&#x5220;&#x9664;&#x5143;&#x7D20;<pre><code>lpop name
+</code></pre></li>
+<li>&#x4ECE;&#x53F3;&#x4FA7;&#x5220;&#x9664;&#x5143;&#x7D20;<pre><code>rpop name
+</code></pre></li>
+<li>&#x5220;&#x9664;&#x6307;&#x5B9A;&#x4E2A;&#x6570;&#x7684;&#x5143;&#x7D20;<pre><code>lrem name num val
+</code></pre></li>
+<li>&#x6307;&#x5B9A;&#x7684;&#x4F4D;&#x7F6E;&#x8BBE;&#x7F6E;&#x503C;<pre><code>lset name num val
+</code></pre></li>
+<li>&#x5728;&#x6307;&#x5B9A;&#x7684;&#x4F4D;&#x7F6E;&#x4E4B;&#x540E;&#x63D2;&#x5165;&#x503C;<pre><code>linsert name after val newval
+</code></pre></li>
+<li>&#x5728;&#x6307;&#x5B9A;&#x7684;&#x4F4D;&#x7F6E;&#x4E4B;&#x524D;&#x63D2;&#x5165;&#x503C;<pre><code>linsert name before val newval
+</code></pre></li>
+<li>&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x4E2A;&#x6570;<pre><code>llen name
+</code></pre></li>
+</ol>
+<h1 id="redis-set&#x6570;&#x636E;&#x7684;&#x5E38;&#x7528;&#x547D;&#x4EE4;">redis set&#x6570;&#x636E;&#x7684;&#x5E38;&#x7528;&#x547D;&#x4EE4;</h1>
+<p><strong>set &#x4E2D;&#x4E0D;&#x5141;&#x8BB8;&#x51FA;&#x73B0;&#x91CD;&#x590D;&#x7684;&#x5143;&#x7D20;</strong></p>
+<ol>
+<li>&#x8BBE;&#x7F6E;&#x503C;<pre><code>sadd name val1,val2,val3
+</code></pre></li>
+<li>&#x5220;&#x9664;&#x503C;<pre><code>srem name val1,val2,val3
+</code></pre></li>
+<li>&#x67E5;&#x770B;&#x503C;<pre><code>smembers name
+</code></pre></li>
+<li>&#x5224;&#x65AD;&#x67D0;&#x4E2A;&#x503C;&#x662F;&#x5426;&#x5B58;&#x5728;<pre><code>sismember name val
+</code></pre></li>
+<li>&#x5DEE;&#x96C6;&#x8FD0;&#x7B97;<pre><code>sdiff name1 name2
+</code></pre></li>
+<li>&#x4EA4;&#x96C6;&#x8FD0;&#x7B97;<pre><code>sinter name1 name2
+</code></pre></li>
+<li>&#x5E76;&#x96C6;&#x8FD0;&#x7B97;<pre><code>sunion name1 name2
+</code></pre></li>
+<li>&#x83B7;&#x53D6;&#x6210;&#x5458;&#x7684;&#x6570;&#x91CF;<pre><code>scard name
+</code></pre></li>
+</ol>
+<h1 id="redis-key&#x7684;&#x901A;&#x7528;&#x64CD;&#x4F5C;">redis key&#x7684;&#x901A;&#x7528;&#x64CD;&#x4F5C;</h1>
+<ol>
+<li>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x7684;key<pre><code>keys *
+</code></pre></li>
+<li>&#x67E5;&#x770B;&#x67D0;&#x4E9B;key<pre><code>keys name?
+</code></pre></li>
+<li>&#x5220;&#x9664;&#x6307;&#x5B9A;&#x7684;key<pre><code>del key1 key2 ....
+</code></pre></li>
+<li>&#x67E5;&#x770B;&#x67D0;&#x4E2A;&#x952E;&#x662F;&#x5426;&#x5B58;&#x5728;<pre><code>exists key
+</code></pre></li>
+<li>&#x91CD;&#x547D;&#x540D;key<pre><code>rename key newkey
+</code></pre></li>
+<li>&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x503C;&#x8FC7;&#x671F;&#x7684;&#x65F6;&#x95F4;<pre><code>expire key time
+</code></pre></li>
+<li>&#x67E5;&#x770B;&#x5269;&#x4F59;&#x7684;&#x65F6;&#x95F4;<pre><code>ttl key
+</code></pre></li>
+<li>&#x83B7;&#x53D6;key&#x7684;&#x7C7B;&#x578B;<pre><code>type key
+</code></pre></li>
+<li>&#x6E05;&#x7A7A;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;<pre><code>flushall
+</code></pre></li>
+<li>&#x9009;&#x62E9;&#x5E93;<pre><code>select num
+</code></pre></li>
+</ol>
+<h1 id="redis&#x6301;&#x4E45;&#x5316;&#x65B9;&#x5F0F;">redis&#x6301;&#x4E45;&#x5316;&#x65B9;&#x5F0F;</h1>
+<ol>
+<li>RDB&#x65B9;&#x5F0F; &#x9ED8;&#x8BA4;</li>
+<li>AOF</li>
+</ol>
+<h1 id="python-&#x64CD;&#x4F5C;redis">python &#x64CD;&#x4F5C;redis</h1>
+<ol>
+<li>&#x5B89;&#x88C5; redispy<pre><code>sudo pip install redis
+</code></pre></li>
+</ol>
+<h1 id="django&#x4F7F;&#x7528;redis">django&#x4F7F;&#x7528;redis</h1>
+<ol>
+<li>&#x5B89;&#x88C5;&#x5305;&#xFF1A;pip install django-redis-cache</li>
+<li><p>&#x8BBE;&#x7F6E; setting</p>
+<pre><code>
+ CACHES = {
+     &quot;default&quot;: {
+         &quot;BACKEND&quot;: &quot;redis_cache.cache.RedisCache&quot;,
+         &quot;LOCATION&quot;: &quot;172.16.168.130:6379&quot;,
+         &quot;OPTIONS&quot;:{
+             &apos;PASSWORD&apos;: &apos;123456&apos;
+         },
+         &apos;TIMEOUT&apos;: 60,
+     },
+ }
+</code></pre></li>
+<li><p>&#x5355;&#x4E2A;view&#x7F13;&#x5B58;</p>
+<pre><code> from django.views.decorators.cache import cache_page
+
+ @cache_page(60 * 15)
+ def index(request):
+     return HttpResponse(&apos;hello1&apos;)
+     #return HttpResponse(&apos;hello2&apos;)
+</code></pre></li>
+<li><p>&#x6A21;&#x677F;&#x7247;&#x65AD;&#x7F13;&#x5B58;</p>
+<pre><code> { % load cache % }
+ { % cache 500 hello % }
+ hello1
+ &lt;!--hello2--&gt;
+ { % endcache % }
+</code></pre></li>
+<li><p>&#x8C03;&#x7528;&#x539F;&#x751F;&#x65B9;&#x6CD5;</p>
+<pre><code> from django.core.cache import cache
+
+ &#x8BBE;&#x7F6E;&#xFF1A;cache.set(&#x952E;,&#x503C;,&#x6709;&#x6548;&#x65F6;&#x95F4;)
+ &#x83B7;&#x53D6;&#xFF1A;cache.get(&#x952E;)
+ &#x5220;&#x9664;&#xFF1A;cache.delete(&#x952E;)
+ &#x6E05;&#x7A7A;&#xFF1A;cache.clear()
+</code></pre></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ubuntu.html" class="navigation navigation-next " aria-label="Next page: ubuntu">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"redis","level":"1.2","depth":1,"next":{"title":"ubuntu","level":"1.3","depth":1,"path":"ubuntu.md","ref":"ubuntu.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"redis.md","mtime":"2018-08-21T03:00:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-31T08:34:10.338Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
