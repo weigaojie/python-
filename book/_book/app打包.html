@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="numpy/preview.html" />
+    
     
     <link rel="prev" href="vue整合.html" />
     
@@ -165,6 +167,77 @@
             
         </li>
     
+        <li class="chapter " data-level="1.7" data-path="numpy/preview.html">
+            
+                <a href="numpy/preview.html">
+            
+                    
+                    numpy概览
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="numpy/numpy.html">
+            
+                <a href="numpy/numpy.html">
+            
+                    
+                    创建数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="numpy/math.html">
+            
+                <a href="numpy/math.html">
+            
+                    
+                    数组运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="numpy/operation.html">
+            
+                <a href="numpy/operation.html">
+            
+                    
+                    数组操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="numpy/usea.html">
+            
+                <a href="numpy/usea.html">
+            
+                    
+                    算法应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
 
@@ -217,8 +290,22 @@
  <img src="1.png" alt="avatar"></li>
 <li>&#x5728;manifest.json&#x4FEE;&#x6539;&#x9875;&#x9762;&#x5165;&#x53E3;&#x5730;&#x5740;&#xFF0C;&#x4EE5;&#x53CA;&#x56FE;&#x6807;
  <img src="2.png" alt="avatar"></li>
-<li>&#x53D1;&#x884C;&#x4E3A;&#x539F;&#x751F;&#x7684;&#x5B89;&#x88C5;&#x5305;
- <img src="3.png" alt="avatar"></li>
+<li><p>&#x53D1;&#x884C;&#x4E3A;&#x539F;&#x751F;&#x7684;&#x5B89;&#x88C5;&#x5305;
+ <img src="3.png" alt="avatar"></p>
+</li>
+<li><p>&#x6253;&#x5305;&#x8FC7;&#x7A0B;
+ <img src="4.png" alt="avatar"></p>
+</li>
+<li><p>&#x6253;&#x5305;&#x5B8C;&#x6210;</p>
+</li>
+<li><p>&#x5B89;&#x88C5;&#x6587;&#x4EF6;&#x8FC1;&#x79FB;&#x5230;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x63D0;&#x4F9B;&#x4E0B;&#x8F7D;</p>
+<pre><code> def download(req):
+     f=open(&quot;upload/test.apk&quot;,&quot;rb&quot;)
+     res=HttpResponse(f)
+     res[&quot;content-type&quot;]=&quot;application/octet-stream&quot;
+     res[&quot;content-disposition&quot;]=&quot;attachment;filename=&apos;1.apk&apos;&quot;
+     return res
+</code></pre></li>
 </ol>
 
                                 
@@ -247,10 +334,14 @@
 
             
                 
-                <a href="vue整合.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: vue整合">
+                <a href="vue整合.html" class="navigation navigation-prev " aria-label="Previous page: vue整合">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="numpy/preview.html" class="navigation navigation-next " aria-label="Next page: numpy概览">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -259,7 +350,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"app打包","level":"1.6","depth":1,"previous":{"title":"vue整合","level":"1.5","depth":1,"path":"vue整合.md","ref":"vue整合.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"app打包.md","mtime":"2018-08-31T08:57:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-31T08:34:10.338Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"app打包","level":"1.6","depth":1,"next":{"title":"numpy概览","level":"1.7","depth":1,"path":"numpy/preview.md","ref":"numpy/preview.md","articles":[{"title":"创建数组","level":"1.7.1","depth":2,"path":"numpy/numpy.md","ref":"numpy/numpy.md","articles":[]},{"title":"数组运算","level":"1.7.2","depth":2,"path":"numpy/math.md","ref":"numpy/math.md","articles":[]},{"title":"数组操作","level":"1.7.3","depth":2,"path":"numpy/operation.md","ref":"numpy/operation.md","articles":[]},{"title":"算法应用","level":"1.7.4","depth":2,"path":"numpy/usea.md","ref":"numpy/usea.md","articles":[]}]},"previous":{"title":"vue整合","level":"1.5","depth":1,"path":"vue整合.md","ref":"vue整合.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"app打包.md","mtime":"2018-08-31T09:49:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-02T04:20:29.430Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
